@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Movie Genre Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="../static/styles.css">
+		<!-- {{ url_for('static', filename='styles.css') }} -->
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+    		<h2><span class="heading_font">Genre Predictor</span> for Movies</h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<h1 class='result result-heading'>Prediction: </h1>
+		<div class="results">
+			{% if prediction==0 %}
+				<h1 class='result result-prediction'>Miscellaneous</h1>
+			{% elif prediction==1 %}
+				<h1 class='result result-prediction'>Action</h1>
+			{% elif prediction==2 %}
+				<h1 class='result result-prediction'>Adventure</h1>
+			{% elif prediction==3 %}
+				<h1 class='result result-prediction'>Comedy</h1>
+			{% elif prediction==4 %}
+				<h1 class='result result-prediction'>Drama</h1>
+			{% elif prediction==5 %}
+				<h1 class='result result-prediction'>Horror</h1>
+			{% elif prediction==6 %}
+				<h1 class='result result-prediction'>Romance</h1>
+			{% elif prediction==7 %}
+				<h1 class='result result-prediction'>Sci-Fi</h1>
+			{% elif prediction==8 %}
+				<h1 class='result result-prediction'>Thriller</h1>
+			{% endif %}
+		</div>
+
+		<!-- Contact -->
+        <div class="contact">
+            <a target="_blank" href="https://github.com/anujvyas"><i class="fab fa-github fa-lg contact-icon"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+
+		<!-- Footer -->
+        <footer>Made with ❤️ by Anuj Vyas.</footer>
+
+	</body>
+</html>
