@@ -7,7 +7,7 @@
 Deployed at: _https://movie-genre-prediction.herokuapp.com/_
 
 • If you are searching for __Code__, __Algorithms used__ and __Accuracy__ of the model.. you won't find it here. Click the link mentioned below for the same:<br />
-Repository Link: _https://github.com/anujvyas/Natural-Language-Processing-Projects/tree/master/Movies%20Genre%20Classification_
+Link: _https://github.com/anujvyas/Natural-Language-Processing-Projects/tree/master/Movies%20Genre%20Classification_
 
 • Please do ⭐ the repository, if it helped you in anyway.
 
